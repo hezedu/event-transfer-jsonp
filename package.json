@@ -1,6 +1,6 @@
 {
   "name": "dw_jsonp",
-  "version": "0.0.5",
+  "version": "0.7.0",
   "main": "index",
   "keywords": [
     "jsonp",

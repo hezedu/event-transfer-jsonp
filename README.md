@@ -3,8 +3,6 @@ It used event to transfer data, good for http cache.
 ##install
 `npm install dw_jsonp`
 #Api
-just one:
-
 ###dw_jsonp(url, callback)
 
 ##example
@@ -14,4 +12,4 @@ dw_jsonp('/someurl', function(data){
 })
 ```
 support AMD , commonjs.
-# Not support IE
+# Don't support IE
