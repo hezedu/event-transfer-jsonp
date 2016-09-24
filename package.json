@@ -1,0 +1,27 @@
+{
+  "name": "dw_jsonp",
+  "version": "0.0.5",
+  "main": "index",
+  "keywords": [
+    "jsonp",
+    "http",
+    "cache",
+	   "event"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hezedu/jsonp.git"
+  },
+
+  "author": {
+    "name": "hezedu"
+  },
+  "dependencies": {
+  },
+  "licenses": "MIT",
+  "email": "hezedu@hotmail.com",
+  "description": "jsonp request. good for http cache.",
+  "bugs": {
+    "url": "https://github.com/hezedu/jsonp/issues"
+  }
+}
