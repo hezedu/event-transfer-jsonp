@@ -19,6 +19,8 @@
       })
     };
   }
+  
+  //bind
   if (typeof define === 'function' && define.amd) {
     define('dw_jsonp', function() {
       return jsonp;
