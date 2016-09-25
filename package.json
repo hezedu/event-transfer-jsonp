@@ -1,6 +1,6 @@
 {
   "name": "event-transfer-jsonp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index",
   "keywords": [
     "jsonp",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hezedu/jsonp.git"
+    "url": "https://github.com/hezedu/event-transfer-jsonp.git"
   },
 
   "author": {
@@ -24,6 +24,6 @@
   "email": "hezedu@hotmail.com",
   "description": "jsonp request. good for http cache.",
   "bugs": {
-    "url": "https://github.com/hezedu/jsonp/issues"
+    "url": "https://github.com/hezedu/event-transfer-jsonp/issues"
   }
 }
