@@ -4,9 +4,9 @@ It used event to transfer data,the callback is Fixed. good for http cache.
 `npm install event-transfer-jsonp`
 
 The expose name is `eventTransferJsonp`. support AMD,commonjs.
-#ApI: 
+##API
 
-eventTransferJsonp(url, callback)
+###eventTransferJsonp(url, callback)
 
 ##example
 ```js
