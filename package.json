@@ -1,12 +1,14 @@
 {
-  "name": "dw_jsonp",
-  "version": "0.7.0",
+  "name": "event-transfer-jsonp",
+  "version": "1.0.0",
   "main": "index",
   "keywords": [
     "jsonp",
+    "eventTransferJsonp",
     "http",
     "cache",
-	   "event"
+    "fixed",
+	  "event"
   ],
   "repository": {
     "type": "git",

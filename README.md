@@ -1,15 +1,26 @@
-# dw_jsonp
-It used event to transfer data, good for http cache.
+# eventTransferJsonp
+It used event to transfer data,the callback is Fixed. good for http cache.
 ##install
-`npm install dw_jsonp`
+`npm install event-transfer-jsonp`
+
+The expose name is `eventTransferJsonp`
+
+support AMD
+
+###Don't support IE!
 #Api
-###dw_jsonp(url, callback)
+###eventTransferJsonp(url, callback)
 
 ##example
 ```js
-dw_jsonp('/someurl', function(data){
+eventTransferJsonp('/someurl', function(err, data){
+  if(err){ //the err just a event
+    return console.log('error', err);
+  }
   console.log(data);
 })
 ```
-support AMD , commonjs.
-# Don't support IE
+##QA
+Can i modify the callbackName ?
+
+No

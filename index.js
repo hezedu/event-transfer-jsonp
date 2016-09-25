@@ -1,12 +1,14 @@
 (function(){
-  var  CALLBACK_NAME = 'dw_jsonp_cb';
+  var  CALLBACK_NAME = 'event_transfer_cb';
   var CALLBACK_PARAM = 'callback=' + CALLBACK_NAME;
+  var OUT_NAME = 'eventTransferJsonp';
 
   window[CALLBACK_NAME] = function jsonp_cb(data){
     var script = document.currentScript;
     script.addEventListener('load', function(event){
       event.dwJsonpData = data;
     });
+
   }
 
   function _joinUrl(url){
@@ -27,19 +29,24 @@
     document.head.appendChild(script);
     script.onload = function (event) {
       setTimeout(function(){
-        callback(event.dwJsonpData);
+        callback(null, event.dwJsonpData);
+        document.head.removeChild(script);
       })
     };
+    script.onerror  = function(event){
+      callback(event);
+      document.head.removeChild(script);
+    }
   }
 
   //bind
   if (typeof define === 'function' && define.amd) {
-    define('dw_jsonp', function() {
+    define(OUT_NAME, function() {
       return jsonp;
     });
   }else if(typeof module === 'object' && module.exports){
     module.exports = jsonp
   }else{
-    window['dw_jsonp'] = jsonp;
+    window[OUT_NAME] = jsonp;
   }
 })();
