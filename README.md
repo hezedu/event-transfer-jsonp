@@ -8,7 +8,9 @@ The expose name is `eventTransferJsonp`
 support AMD
 
 ###Don't support IE!
-#ApI: eventTransferJsonp(url, callback)
+#ApI: 
+
+eventTransferJsonp(url, callback)
 
 ##example
 ```js
