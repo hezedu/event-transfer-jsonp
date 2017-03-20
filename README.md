@@ -1,14 +1,14 @@
 # eventTransferJsonp
 It used event to transfer data,the callback is Fixed. good for http cache.
-##install
+## install
 `npm install event-transfer-jsonp`
 
 The expose name is `eventTransferJsonp`. support AMD,commonjs.
-##API
+## API
 
-###eventTransferJsonp(url, callback)
+### eventTransferJsonp(url, callback)
 
-##example
+## example
 ```js
 eventTransferJsonp('/someurl', function(err, data){
   if(err){ //the err just a event
@@ -17,8 +17,8 @@ eventTransferJsonp('/someurl', function(err, data){
   console.log(data);
 })
 ```
-##Don't support IE!
-##QA
+## Don't support IE!
+## QA
 Can i modify the callbackName ?
 
 No
