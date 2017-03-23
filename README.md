@@ -1,5 +1,5 @@
 # eventTransferJsonp
-It used event to transfer data,the callback is Fixed. good for http cache.
+It used event to transfer data, fix the callback name. good for http cache.
 ## install
 `npm install event-transfer-jsonp`
 
